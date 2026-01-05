@@ -1,0 +1,201 @@
+{
+    "header": {
+        "logo": "ITOTECH",
+        "nav": [
+            {
+                "label": "Services",
+                "href": "#services"
+            },
+            {
+                "label": "Why Us",
+                "href": "#features"
+            },
+            {
+                "label": "Programs",
+                "href": "#programs"
+            },
+            {
+                "label": "Plans",
+                "href": "#plans"
+            }
+        ],
+        "cta": {
+            "label": "Join Waitlist",
+            "href": "https://forms.gle/waitlist"
+        }
+    },
+    "hero": {
+        "badge": "ADMISSION OPENING SOON",
+        "title": "Empowering young minds through technology",
+        "description": "Unlock your potential with hands-on training in software engineering, data science, and product design.",
+        "cta_primary": {
+            "label": "Join Waitlist",
+            "href": "https://forms.gle/waitlist"
+        },
+        "cta_secondary": {
+            "label": "Join Community",
+            "href": "https://community.itotech.com"
+        }
+    },
+    "services": {
+        "title": "What We Do",
+        "subtitle": "Trusted Technology Curriculum & Tech Education Market Leader since 2025. Providing young folks in...",
+        "items": [
+            {
+                "icon": "code",
+                "title": "Tech Training",
+                "description": "Master the latest technologies through intensive, project-based learning. Whether you're a beginner or looking to upskill, we have a path for you."
+            },
+            {
+                "icon": "groups",
+                "title": "Mentorship",
+                "description": "Get guidance from industry experts. Our mentorship program connects you with experienced professionals who can help you navigate your career."
+            },
+            {
+                "icon": "work",
+                "title": "Career Services",
+                "description": "We don't just teach you skills; we help you launch your career. From resume reviews to mock interviews, we've got you covered."
+            }
+        ]
+    },
+    "features": {
+        "badge": "WHY ITOTECH?",
+        "title": "Innovating the Future, One Mind at a Time.",
+        "description": "At ITOTECH, we believe that everyone deserves the opportunity to learn and grow. That's why we're committed to accessible, high-quality tech education for all.",
+        "points": [
+            {
+                "title": "Expert Instructors",
+                "desc": "Learn from industry professionals who are passionate about teaching."
+            },
+            {
+                "title": "Hybrid Learning",
+                "desc": "Flexible online and offline classes to suit your schedule."
+            },
+            {
+                "title": "Career Focus",
+                "desc": "We prepare you for the job market with real-world projects."
+            },
+            {
+                "title": "Supportive Community",
+                "desc": "Join a network of peers and mentors who will support you every step."
+            }
+        ],
+        "image_alt": "Innovating the Future",
+        "image_src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2070"
+    },
+    "programs": {
+        "title": "Explore Our Programs",
+        "subtitle": "Choose your path and start your journey today. We offer a wide range of programs designed to equip you with in-demand skills.",
+        "items": [
+            {
+                "icon": "palette",
+                "title": "CAD & Design",
+                "description": "Master Computer-Aided Design and creative modeling."
+            },
+            {
+                "icon": "analytics",
+                "title": "Simulation & Analysis",
+                "description": "Learn advanced simulation techniques and data analysis."
+            },
+            {
+                "icon": "terminal",
+                "title": "Web Development",
+                "description": "Build modern websites and web applications."
+            },
+            {
+                "icon": "campaign",
+                "title": "Tech for Young Minds",
+                "description": "Inspiring the next generation of tech innovators."
+            }
+        ]
+    },
+    "founders": {
+        "title": "Meet the Mind Behind ITOTECH",
+        "subtitle": "Driven by a passion for education and a vision for the future of technology in Africa.",
+        "items": [
+            {
+                "name": "Ijagun Itothe Joy",
+                "role": "Founder",
+                "bio": "I founded ITOTECH with a simple belief: that technology is the great equalizer. Our goal isn't just to teach code, but to unlock the boundless potential within every young person who walks through our doors.",
+                "image": "/founder.jpg",
+                "linkedin": "https://linkedin.com/in/ijagun-joy",
+                "signature": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4Q1NWUxarAmlpMQebc5x8GuQIIL96HP4J_GAe1ga0IFIqtaJKyzBXTlhJrbSynrGejJacVDJZbwBWYads43nXeUj5ghguBVTkIe9R8BK4cO6Gt2d09-agKnaqcGGaPbKlx-yaXg95naSp0C1rCEUrFnFw5rPgGrXuRME5gwzW1Mo7AkPWYOBYi5rYsjsUY1UDJk-UvW3e1XcXXrADpNzlhdksNLFk3CcNpcfix1XQ8MGBRsFksB2TupKNiTDKumTTB1rKsrfTEi8"
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Student Stories",
+        "items": [
+            {
+                "quote": "I came into ITOTECH knowing nothing about code. 6 months later, I'm building full-stack apps and interning at a startup. The project-based learning is a game changer.",
+                "author": "Sarah Adebayo",
+                "role": "Software Engineering Student",
+                "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuABAHJtoGgk-0AVAJATtJGRhFYDwHpAsmispuLonBheMiL2HBHFeWH3Ls0i2zp6Cx7Lz4ICneQ-O53k_-xW9WyKWcRpT3zXHBUlPnf7ykva1tc-4Glepmwmi_ONFLwX0FQmptQb0WkD_5dToffz56ZswkUwaCwH4bGMowbSQFimSlePFzuohJzZ1yDvaz3l4tkI1VbTMB6GMM9YldIhHJkH_cGkD_Qz3VIxXiNVPrGhEZ7AeQRpja85a8jKH_KZoC_kBwvhuOI2PLc"
+            },
+            {
+                "quote": "I came into ITOTECH knowing nothing about Design. 6 months later, I'm designing project I see as complex before.",
+                "author": "Emmanuel K.",
+                "role": "CAD Design, Student",
+                "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBs1vuMbG7jJbOyf2bcUqI2FA8ukJZaqmkQCYwTaalCpM9pkFr7cp5fVLsdDblD1W70BJBlUZ3NZFnT_qG8uYEB1Pykkz-TQLcVlmz0cXHFZbhLgHRI2TJ7gGZFxPgeLFtEMhG3Cbpwnyvcup4E29oPI8OpkPO5v-6Ovn6Jo5DF0bqWqZZkwL8LmzuczwJ4bRYDehry2XAyGgRXXGL2bzGPEO2-Qe2-lotvJAFMN7EavoBzzj6wqMO5NmJOM7cLWtRfY7pqhDaiOPs"
+            }
+        ]
+    },
+    "cta_section": {
+        "title": "Ready to start your journey?",
+        "description": "Join the next cohort or reach out to us for more information. Your future in tech starts here.",
+        "contact_info": [
+            {
+                "icon": "location_on",
+                "text": "Abuja, Nigeria"
+            },
+            {
+                "icon": "mail",
+                "text": "admissions@itotech.hub"
+            },
+            {
+                "icon": "call",
+                "text": "+234 800 123 4567"
+            }
+        ],
+        "form_title": "Join our Community",
+        "subtitle": "Join 5,000+ others waiting for the next cohort",
+        "card_title": "Registration Opens Soon",
+        "card_desc": "We are finalizing the curriculum for the next batch.",
+        "button": {
+            "label": "Get Notified",
+            "href": "https://forms.gle/waitlist"
+        }
+    },
+    "footer": {
+        "description": "Empowering the next generation of tech leaders through world-class education and mentorship.",
+        "links": {
+            "Programs": [
+                "CAD & Design",
+                "Simulation & Analysis",
+                "Web Development",
+                "Tech for Young Minds"
+            ],
+            "Quick Links": []
+        },
+        "social": [
+            {
+                "platform": "Twitter",
+                "href": "https://twitter.com/itotech"
+            },
+            {
+                "platform": "Instagram",
+                "href": "https://instagram.com/itotech"
+            },
+            {
+                "platform": "LinkedIn",
+                "href": "https://linkedin.com/company/itotech"
+            },
+            {
+                "platform": "Facebook",
+                "href": "https://facebook.com/itotech"
+            }
+        ],
+        "copyright": "© 2026 ITOTECH Learning Hub. All rights reserved.",
+        "tagline": "Designed for Impact."
+    }
+}
