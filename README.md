@@ -94,13 +94,6 @@ itotech/
 └── vite.config.ts       # Vite configuration
 ```
 
-## 🤝 Contact
-
-**ITOTECH Learning Hub**
--   📍 **Location**: Abuja, Nigeria
--   📧 **Email**: [admissions@itotech.hub](mailto:admissions@itotech.hub)
--   📞 **Phone**: +234 800 123 4567
-
 **Follow us:**
 -   [Twitter](https://twitter.com/itotech)
 -   [Instagram](https://instagram.com/itotech)
