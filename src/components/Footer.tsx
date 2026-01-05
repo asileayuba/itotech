@@ -11,7 +11,7 @@ export function Footer() {
                     {/* Brand Column */}
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex items-center gap-3 mb-6">
-                            <img src="/footer_icon.png" alt="Itotech Logo" className="size-8 rounded-lg object-contain" />
+                            <img src="/icon.png" alt="Itotech Logo" className="size-8 rounded-lg object-contain" />
                             <h2 className="text-xl font-black tracking-tight">ITOTECH</h2>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
