@@ -27,7 +27,7 @@
     "hero": {
         "badge": "ADMISSION OPENING SOON",
         "title": "Empowering young minds through technology",
-        "description": "Unlock your potential with hands-on training in software engineering, data science, and product design.",
+        "description": "Unlock your potential with hands-on training in CAD & Design, Simulation & Analysis, Web Development, and Tech for Young Minds.",
         "cta_primary": {
             "label": "Join Waitlist",
             "href": "https://forms.gle/waitlist"
@@ -39,7 +39,7 @@
     },
     "services": {
         "title": "What We Do",
-        "subtitle": "Trusted Technology Curriculum & Tech Education Market Leader since 2025. Providing young folks in...",
+        "subtitle": "Trusted Technology Curriculum & Tech Education Market Leader since 2025. Providing young folks in Africa with the skills and knowledge to succeed in the tech industry...",
         "items": [
             {
                 "icon": "code",

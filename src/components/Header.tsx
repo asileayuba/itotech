@@ -62,10 +62,10 @@ export function Header() {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden border-b bg-background"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        className="md:hidden absolute top-16 left-0 right-0 border-b bg-background shadow-xl border-t border-border/50"
                     >
                         <div className="container mx-auto px-4 py-4 flex flex-col gap-4">
                             {nav.map((item) => (
