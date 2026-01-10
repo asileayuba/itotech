@@ -46,14 +46,7 @@ export function Founders() {
                             <blockquote className="text-lg text-slate-700 italic font-light mb-6">
                                 "{founder.bio}"
                             </blockquote>
-                            {(founder as any).signature && (
-                                <img
-                                    src={(founder as any).signature}
-                                    alt="Signature"
-                                    className="h-10 opacity-60 mx-auto md:mx-0"
-                                    loading="lazy"
-                                />
-                            )}
+
                         </div>
                     </motion.div>
                 ))}

@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Twitter } from "lucide-react"
+import { Instagram, Linkedin, Twitter, Facebook } from "lucide-react"
 import data from "@/data.json"
 
 export function Footer() {
@@ -70,6 +70,7 @@ export function Footer() {
                             let Icon = Twitter;
                             if (social.platform === 'Instagram') Icon = Instagram;
                             if (social.platform === 'LinkedIn') Icon = Linkedin;
+                            if (social.platform === 'Facebook') Icon = Facebook;
 
                             return (
                                 <a

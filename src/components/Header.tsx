@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import data from "@/data.json"
 
 export function Header() {
@@ -44,9 +45,22 @@ export function Header() {
                             {item.label}
                         </a>
                     ))}
-                    <a href={cta.href} target="_blank" rel="noopener noreferrer">
-                        <Button className="rounded-full px-6 font-bold shadow-lg shadow-primary/20">{cta.label}</Button>
-                    </a>
+                    {cta.href && cta.href !== "#" ? (
+                        <a href={cta.href} target="_blank" rel="noopener noreferrer">
+                            <Button className="rounded-full px-6 font-bold shadow-lg shadow-primary/20">{cta.label}</Button>
+                        </a>
+                    ) : (
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <span tabIndex={0} className="cursor-not-allowed">
+                                    <Button disabled className="rounded-full px-6 font-bold shadow-lg shadow-primary/20 pointer-events-none">{cta.label}</Button>
+                                </span>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>Coming Soon</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    )}
                 </nav>
 
                 {/* Mobile Menu Toggle */}
@@ -78,9 +92,22 @@ export function Header() {
                                     {item.label}
                                 </a>
                             ))}
-                            <a href={cta.href} target="_blank" rel="noopener noreferrer" className="w-full">
-                                <Button className="w-full rounded-full">{cta.label}</Button>
-                            </a>
+                            {cta.href && cta.href !== "#" ? (
+                                <a href={cta.href} target="_blank" rel="noopener noreferrer" className="w-full">
+                                    <Button className="w-full rounded-full">{cta.label}</Button>
+                                </a>
+                            ) : (
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <span tabIndex={0} className="w-full cursor-not-allowed block">
+                                            <Button disabled className="w-full rounded-full pointer-events-none">{cta.label}</Button>
+                                        </span>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Coming Soon</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            )}
                         </div>
                     </motion.div>
                 )}

@@ -3,6 +3,7 @@ import { MapPin, Mail, Phone, Calendar } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import data from "@/data.json"
 
 const iconMap: Record<string, any> = {
@@ -60,11 +61,26 @@ export function CTASection() {
                                         <h4 className="text-lg font-semibold">{card_title}</h4>
                                         <p className="text-slate-500 text-sm">{card_desc}</p>
                                     </div>
-                                    <a href={button.href} target="_blank" rel="noopener noreferrer" className="w-full">
-                                        <Button className="w-full" size="lg">
-                                            {button.label}
-                                        </Button>
-                                    </a>
+                                    {button.href && button.href !== "#" ? (
+                                        <a href={button.href} target="_blank" rel="noopener noreferrer" className="w-full">
+                                            <Button className="w-full" size="lg">
+                                                {button.label}
+                                            </Button>
+                                        </a>
+                                    ) : (
+                                        <Tooltip>
+                                            <TooltipTrigger asChild>
+                                                <span tabIndex={0} className="w-full cursor-not-allowed">
+                                                    <Button disabled className="w-full pointer-events-none" size="lg">
+                                                        {button.label}
+                                                    </Button>
+                                                </span>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Coming Soon</p>
+                                            </TooltipContent>
+                                        </Tooltip>
+                                    )}
                                 </CardContent>
                             </Card>
                         </motion.div>

@@ -97,7 +97,8 @@ itotech/
 **Follow us:**
 -   [Twitter](https://twitter.com/itotech)
 -   [Instagram](https://instagram.com/itotech)
--   [LinkedIn](https://linkedin.com/company/itotech)
+-   [LinkedIn](https://www.linkedin.com/company/itotechitothestic/)
+-   [Facebook](https://www.facebook.com/profile.php?id=61585902733968)
 
 ---
 © 2026 ITOTECH Learning Hub. All rights reserved.

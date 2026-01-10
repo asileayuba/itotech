@@ -3,6 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
 import data from "@/data.json"
 
 export function Hero() {
@@ -57,12 +58,28 @@ export function Hero() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <a href={cta_primary.href} target="_blank" rel="noopener noreferrer">
-                                <Button size="lg" className="rounded-full text-base h-12 px-8 bg-white text-[#081522] hover:bg-white/10 hover:text-white">
-                                    {cta_primary.label}
-                                    <ArrowRight className="ml-2 w-4 h-4" />
-                                </Button>
-                            </a>
+                            {cta_primary.href && cta_primary.href !== "#" ? (
+                                <a href={cta_primary.href} target="_blank" rel="noopener noreferrer">
+                                    <Button size="lg" className="rounded-full text-base h-12 px-8 bg-white text-[#081522] hover:bg-white/10 hover:text-white">
+                                        {cta_primary.label}
+                                        <ArrowRight className="ml-2 w-4 h-4" />
+                                    </Button>
+                                </a>
+                            ) : (
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <span tabIndex={0} className="cursor-not-allowed">
+                                            <Button disabled size="lg" className="rounded-full text-base h-12 px-8 bg-white text-[#081522] opacity-70 cursor-not-allowed pointer-events-none">
+                                                {cta_primary.label}
+                                                <ArrowRight className="ml-2 w-4 h-4" />
+                                            </Button>
+                                        </span>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Coming Soon</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            )}
                             <a href={cta_secondary.href} target="_blank" rel="noopener noreferrer">
                                 <Button size="lg" variant="outline" className="rounded-full text-base h-12 px-8 border-white/20 text-[#081522] hover:bg-white/10 hover:text-white">
                                     {cta_secondary.label}

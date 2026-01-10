@@ -1,4 +1,5 @@
 import { Suspense, lazy } from "react"
+import { TooltipProvider } from "@/components/ui/tooltip"
 import { Header } from "@/components/Header"
 import { Hero } from "@/components/Hero"
 
@@ -13,34 +14,36 @@ const Footer = lazy(() => import("@/components/Footer").then(module => ({ defaul
 
 function App() {
   return (
-    <div className="min-h-screen bg-background font-sans antialiased">
-      <title>ITOTECH - Empowering Young Minds Through Technology</title>
-      <meta name="description" content="Unlock your potential with hands-on training in software engineering, data science, and product design at ITOTECH." />
-      <meta name="keywords" content="ITOTECH, tech education, software engineering, data science, product design, Africa, technology training" />
-      <meta property="og:title" content="ITOTECH - Empowering Young Minds Through Technology" />
-      <meta property="og:description" content="Unlock your potential with hands-on training in software engineering, data science, and product design at ITOTECH." />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
+    <TooltipProvider>
+      <div className="min-h-screen bg-background font-sans antialiased">
+        <title>ITOTECH - Empowering Young Minds Through Technology</title>
+        <meta name="description" content="Unlock your potential with hands-on training in software engineering, data science, and product design at ITOTECH." />
+        <meta name="keywords" content="ITOTECH, tech education, software engineering, data science, product design, Africa, technology training" />
+        <meta property="og:title" content="ITOTECH - Empowering Young Minds Through Technology" />
+        <meta property="og:description" content="Unlock your potential with hands-on training in software engineering, data science, and product design at ITOTECH." />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
 
-      <Header />
+        <Header />
 
-      <main>
-        <Hero />
+        <main>
+          <Hero />
 
-        <Suspense fallback={<div className="py-24 text-center">Loading...</div>}>
-          <Services />
-          <Features />
-          <Programs />
-          <Founders />
-          <Testimonials />
-          <CTASection />
+          <Suspense fallback={<div className="py-24 text-center">Loading...</div>}>
+            <Services />
+            <Features />
+            <Programs />
+            <Founders />
+            <Testimonials />
+            <CTASection />
+          </Suspense>
+        </main>
+
+        <Suspense fallback={<div className="py-8 text-center">Loading footer...</div>}>
+          <Footer />
         </Suspense>
-      </main>
-
-      <Suspense fallback={<div className="py-8 text-center">Loading footer...</div>}>
-        <Footer />
-      </Suspense>
-    </div>
+      </div>
+    </TooltipProvider>
   )
 }
 
