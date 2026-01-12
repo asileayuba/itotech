@@ -126,14 +126,14 @@
         "title": "Student Stories",
         "items": [
             {
-                "quote": "I came into ITOTECH knowing nothing about code. 6 months later, I'm building full-stack apps and interning at a startup. The project-based learning is a game changer.",
-                "author": "Sarah Adebayo",
-                "role": "Software Engineering Student",
-                "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuABAHJtoGgk-0AVAJATtJGRhFYDwHpAsmispuLonBheMiL2HBHFeWH3Ls0i2zp6Cx7Lz4ICneQ-O53k_-xW9WyKWcRpT3zXHBUlPnf7ykva1tc-4Glepmwmi_ONFLwX0FQmptQb0WkD_5dToffz56ZswkUwaCwH4bGMowbSQFimSlePFzuohJzZ1yDvaz3l4tkI1VbTMB6GMM9YldIhHJkH_cGkD_Qz3VIxXiNVPrGhEZ7AeQRpja85a8jKH_KZoC_kBwvhuOI2PLc"
+                "quote": "I recently participated in the ITOTECH Fusion 360 tutorial, which provided a solid introduction to the software. The course covered the basics of the interface, basic sketching techniques, and an introduction to 3D modeling. I found the lessons on creating simple sketches and transforming them into 3D models especially helpful. The tutorial was well-structured, making complex tools easy to understand, and the hands-on practice helped me gain confidence with the software. Overall, it was a great learning experience that has laid a strong foundation for further exploration of Fusion 360.",
+                "author": "OKUSANYA SAMUEL AYODEJI",
+                "role": "CAD Design Student",
+                "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBs1vuMbG7jJbOyf2bcUqI2FA8ukJZaqmkQCYwTaalCpM9pkFr7cp5fVLsdDblD1W70BJBlUZ3NZFnT_qG8uYEB1Pykkz-TQLcVlmz0cXHFZbhLgHRI2TJ7gGZFxPgeLFtEMhG3Cbpwnyvcup4E29oPI8OpkPO5v-6Ovn6Jo5DF0bqWqZZkwL8LmzuczwJ4bRYDehry2XAyGgRXXGL2bzGPEO2-Qe2-lotvJAFMN7EavoBzzj6wqMO5NmJOM7cLWtRfY7pqhDaiOPs"
             },
             {
-                "quote": "I came into ITOTECH knowing nothing about Design. 6 months later, I'm designing project I see as complex before.",
-                "author": "Emmanuel K.",
+                "quote": "The tutors are top-notch, and the breakdown of each part is in-depth. They care not only about the tutorials, but about each student’s individual understanding —which is one thing I really like about Itotech.",
+                "author": "OG Moses",
                 "role": "CAD Design, Student",
                 "avatar": "https://lh3.googleusercontent.com/aida-public/AB6AXuBs1vuMbG7jJbOyf2bcUqI2FA8ukJZaqmkQCYwTaalCpM9pkFr7cp5fVLsdDblD1W70BJBlUZ3NZFnT_qG8uYEB1Pykkz-TQLcVlmz0cXHFZbhLgHRI2TJ7gGZFxPgeLFtEMhG3Cbpwnyvcup4E29oPI8OpkPO5v-6Ovn6Jo5DF0bqWqZZkwL8LmzuczwJ4bRYDehry2XAyGgRXXGL2bzGPEO2-Qe2-lotvJAFMN7EavoBzzj6wqMO5NmJOM7cLWtRfY7pqhDaiOPs"
             }
@@ -153,7 +153,7 @@
             },
             {
                 "icon": "call",
-                "text": "+234 800 123 4567"
+                "text": "+234 808 333 2970"
             }
         ],
         "form_title": "Join our Community",
@@ -179,11 +179,11 @@
         "social": [
             {
                 "platform": "Twitter",
-                "href": "#"
+                "href": "https://x.com/itotech25?s=21"
             },
             {
                 "platform": "Instagram",
-                "href": "#"
+                "href": "https://www.instagram.com/itotech_25?igsh=MXFwaWFha3VkbTN2YQ%3D%3D&utm_source=qr"
             },
             {
                 "platform": "LinkedIn",
