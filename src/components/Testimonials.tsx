@@ -1,9 +1,71 @@
 import { motion } from "framer-motion"
-import { Quote } from "lucide-react"
+import { Quote, ChevronDown, ChevronUp } from "lucide-react"
+import { useState } from "react"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import data from "@/data.json"
+import { Button } from "@/components/ui/button"
+
+function TestimonialCard({ item }: { item: typeof data.testimonials.items[0] }) {
+    const [isExpanded, setIsExpanded] = useState(false)
+    const MAX_LENGTH = 180 // Character limit before truncation
+
+    const shouldTruncate = item.quote.length > MAX_LENGTH
+    const displayQuote = isExpanded || !shouldTruncate
+        ? item.quote
+        : `${item.quote.slice(0, MAX_LENGTH)}...`
+
+    return (
+        <Card className="h-full bg-slate-50 border-slate-100 shadow-sm relative overflow-hidden flex flex-col">
+            <div className="absolute top-6 right-6 text-slate-200">
+                <Quote className="w-12 h-12 rotate-180" />
+            </div>
+            <CardContent className="pt-8 px-8 pb-8 flex flex-col flex-grow">
+                <div className="flex gap-1 mb-6 text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                        <span key={i} className="text-xl">★</span>
+                    ))}
+                </div>
+                <div className="flex-grow">
+                    <p className="text-slate-700 text-lg mb-4 relative z-10 italic">
+                        "{displayQuote}"
+                    </p>
+                    {shouldTruncate && (
+                        <Button
+                            variant="ghost"
+                            size="sm"
+                            className="p-0 h-auto font-medium text-slate-500 hover:text-slate-800 hover:bg-transparent mb-8"
+                            onClick={() => setIsExpanded(!isExpanded)}
+                        >
+                            {isExpanded ? (
+                                <span className="flex items-center gap-1">
+                                    See Less <ChevronUp className="w-4 h-4" />
+                                </span>
+                            ) : (
+                                <span className="flex items-center gap-1">
+                                    See More <ChevronDown className="w-4 h-4" />
+                                </span>
+                            )}
+                        </Button>
+                    )}
+                    {!shouldTruncate && <div className="mb-8" />}
+                </div>
+
+                <div className="flex items-center gap-4 mt-auto">
+                    <Avatar>
+                        <AvatarImage src={item.avatar} alt={item.author} loading="lazy" />
+                        <AvatarFallback>{item.author[0]}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                        <div className="font-bold text-[#081522]">{item.author}</div>
+                        <div className="text-sm text-slate-500">{item.role}</div>
+                    </div>
+                </div>
+            </CardContent>
+        </Card>
+    )
+}
 
 export function Testimonials() {
     const { title, items } = data.testimonials
@@ -21,33 +83,9 @@ export function Testimonials() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
+                            className="h-full"
                         >
-                            <Card className="h-full bg-slate-50 border-slate-100 shadow-sm relative overflow-hidden">
-                                <div className="absolute top-6 right-6 text-slate-200">
-                                    <Quote className="w-12 h-12 rotate-180" />
-                                </div>
-                                <CardContent className="pt-8 px-8 pb-8">
-                                    <div className="flex gap-1 mb-6 text-yellow-400">
-                                        {[...Array(5)].map((_, i) => (
-                                            <span key={i} className="text-xl">★</span>
-                                        ))}
-                                    </div>
-                                    <p className="text-slate-700 text-lg mb-8 relative z-10 italic">
-                                        "{item.quote}"
-                                    </p>
-
-                                    <div className="flex items-center gap-4">
-                                        <Avatar>
-                                            <AvatarImage src={item.avatar} alt={item.author} loading="lazy" />
-                                            <AvatarFallback>{item.author[0]}</AvatarFallback>
-                                        </Avatar>
-                                        <div>
-                                            <div className="font-bold text-[#081522]">{item.author}</div>
-                                            <div className="text-sm text-slate-500">{item.role}</div>
-                                        </div>
-                                    </div>
-                                </CardContent>
-                            </Card>
+                            <TestimonialCard item={item} />
                         </motion.div>
                     ))}
                 </div>
